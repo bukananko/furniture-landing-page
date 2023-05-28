@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Furniture Landing Page</title>
+  </head>
+  <body>
+    <nav
+      class="flex justify-between h-16 md:h-[140px] p-4 md:px-[100px] md:py-[46px] w-full relative">
+      <div class="flex items-center justify-between w-full md:w-max">
+        <img
+          class="w-[107px] md:w-[160px] h-[31px] md:h-[48px]"
+          src="assets/logo.svg"
+          alt="Dekoor" />
+
+        <img
+          id="hamburger-menu"
+          src="./assets/hamburger.svg"
+          alt="Menu"
+          class="h-[14px] w-5 md:hidden" />
+      </div>
+
+      <div id="mobile-menu" class="absolute right-10 top-16 hidden">
+        <ul
+          class="flex flex-col items-start gap-4 py-5 px-8 font-semibold bg-[#FCFAFA]">
+          <li>
+            <a href="#about">About us</a>
+          </li>
+          <li class="flex gap-[14px]">
+            <a href="#furniture">Furniture</a>
+            <img src="./assets/arrow-down.svg" alt="Arrow Down" />
+          </li>
+          <li>
+            <a href="#partnerships">Partnerships</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="hidden md:flex gap-16 items-center font-semibold">
+        <li>
+          <a href="#about">About us</a>
+        </li>
+        <li class="flex gap-[14px]">
+          <a href="#furniture">Furniture</a>
+          <img src="./assets/arrow-down.svg" alt="Arrow Down" />
+        </li>
+        <li>
+          <a href="#partnerships">Partnerships</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <div class="hidden md:flex items-center gap-4">
+        <button
+          class="py-3 px-6 bg-[#E5F0B6] rounded-lg h-12 w-[107px] font-semibold">
+          Sign up
+        </button>
+        <button
+          class="p-3 bg-[#553B33] rounded-lg w-12 h-12 flex justify-center items-center">
+          <img src="assets/cart.png" alt="Cart" />
+        </button>
+      </div>
+    </nav>
+
+    <section class="w-full flex flex-col md:flex-row justify-between gap-16">
+      <div
+        class="flex items-center justify-center flex-col gap-6 md:gap-12 pt-8 md:pt-0">
+        <div class="w-[342px] md:w-[854px] h-36 md:h-max md:pl-[142px]">
+          <h1
+            class="text-[#2F241F] font-extrabold text-[32px] text-center md:text-left md:text-7xl">
+            The kind of <span class="text-[#817253]">furniture</span> you have
+            been looking for
+          </h1>
+        </div>
+
+        <div
+          class="flex flex-col items-center md:flex-row gap-6 w-full justify-end">
+          <button
+            class="flex gap-[19px] justify-center items-center bg-[#E5F0B6] rounded-xl md:text-2xl w-[282px] md:w-[344px] h-14 md:h-20">
+            <img src="assets/search-brown.png" alt="Search" />
+            SEARCH CATALOG
+          </button>
+
+          <button
+            class="flex gap-[18px] justify-center items-center rounded-xl border border-[#553B33] md:text-2xl w-[282px] md:w-[344px] h-14 md:h-20">
+            <img src="assets/video-btn.png" alt="Watch Videos" />
+            Watch Videos
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col justify-between md:justify-end bg-[url(./assets/sofa.png)] w-full md:w-[522px] h-[229px] md:h-[709px] pl-[21px] md:pl-12 pb-6 md:pb-[87px] pt-7 md:pt-0 bg-left-bottom">
+        <p class="text-xs text-white flex md:hidden">HIGHLIGHTED PRODUCT</p>
+
+        <div>
+          <p class="md:text-2xl py-2 px-4 bg-white/50 rounded-xl w-max">$329</p>
+
+          <h3 class="text-white md:text-[64px] text-[24px] w-max">
+            Pösht Sofa
+          </h3>
+
+          <button
+            class="flex items-center gap-6 bg-[#2F241F] py-3 md:py-4 px-4 md:px-6 rounded-xl text-white w-max">
+            VIEW DETAILS
+            <img src="assets/arrow-right.png" alt="Arrow" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="text-[#E5F0B6] bg-[#2F241F] px-6 md:px-[142px] py-8 md:py-[72px] flex flex-col gap-6 md:gap-10">
+      <h2 class="text-sm md:text-2xl text-center md:text-left">
+        WHY CHOOSE US?
+      </h2>
+      <h1 class="text-[24px] md:text-[64px] font-bold text-center md:text-left">
+        We care about details and the quality of our products
+      </h1>
+
+      <div class="flex gap-6 md:gap-16 justify-between flex-col md:flex-row">
+        <div class="flex gap-4 items-center">
+          <img
+            src="./assets/search.svg"
+            alt="Search"
+            class="p-[11px] h-max bg-[#E5F0B6]/50 rounded-lg" />
+          <h3 class="flex gap-4 font-bold text-[15px] md:text-2xl">
+            MANUFACTURED WITH QUALITY MATERIALS
+          </h3>
+        </div>
+
+        <div class="flex gap-4 items-center">
+          <img
+            src="./assets/5.svg"
+            alt="5"
+            class="px-3 w-10 h-10 bg-[#E5F0B6]/50 rounded-lg" />
+          <h3 class="flex gap-4 font-bold text-[15px] md:text-2xl">
+            5 YEARS OF WARRANTY FOR EACH PRODUCT
+          </h3>
+        </div>
+
+        <div class="flex gap-4 items-center flex-none">
+          <img
+            src="./assets/bag.png"
+            alt="Bag"
+            class="p-[10px] bg-[#E5F0B6]/50 rounded-lg h-max" />
+          <h3 class="flex gap-4 font-bold text-[15px] md:text-2xl">
+            20 YEARS OF EXPERTISE
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="partnerships"
+      class="px-6 md:px-[142px] md:py-20 pt-6 pb-10 bg-[#FCFAFA]">
+      <div class="flex justify-between items-center flex-col md:flex-row gap-7">
+        <div>
+          <h1 class="font-bold text-2xl md:text-8xl text-center md:text-left">
+            25+
+          </h1>
+          <h3 class="text-sm md:text-2xl">PARTNERED BRANDS</h3>
+        </div>
+
+        <div class="flex gap-[33px] md:gap-[89px]">
+          <img
+            src="./assets/company1.svg"
+            alt="Company"
+            class="w-12 md:w-max" />
+          <img
+            src="./assets/company2.svg"
+            alt="Company"
+            class="w-12 md:w-max" />
+          <img
+            src="./assets/company3.svg"
+            alt="Company"
+            class="w-12 md:w-max" />
+          <img
+            src="./assets/company4.svg"
+            alt="Company"
+            class="w-12 md:w-max" />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="furniture"
+      class="py-6 md:py-20 flex flex-col-reverse md:flex-row gap-12">
+      <div class="flex justify-evenly md:gap-6 gap-4 px-4 md:px-0">
+        <img
+          src="./assets/recommend1.png"
+          alt="Recommend"
+          class="w-[103px] h-[132px] md:w-max md:h-max" />
+        <img
+          src="./assets/recommend2.png"
+          alt="Recommend"
+          class="w-[103px] h-[132px] md:w-max md:h-max" />
+        <img
+          src="./assets/recommend3.png"
+          alt="Recommend"
+          class="w-[103px] h-[132px] md:w-max md:h-max" />
+      </div>
+
+      <div
+        class="md:w-[434px] md:h-[523px] flex flex-col gap-2 md:gap-8 px-[35px] md:px-0 md:ml-20">
+        <h3 class="text-sm md:text-2xl text-center md:text-left">Categories</h3>
+        <h1
+          class="text-lg md:text-5xl font-bold text-center md:text-left px-10 md:px-0">
+          Furniture Sets Recommendations
+        </h1>
+
+        <ul class="flex flex-col mt-6 md:mt-0 justify-center">
+          <li class="font-bold text-lg bg-[#FCFAFA] py-5 px-4">Bedroom</li>
+          <div
+            class="bg-[#E5F0B6] md:py-6 py-5 md:px-6 px-4 flex flex-col gap-3">
+            <p class="font-bold text-lg">Living Room</p>
+            <p class="text-sm">
+              Enjoy a great living room aesthetics with your family Designs
+              created for increased comfortability
+            </p>
+          </div>
+          <li class="font-bold text-lg bg-[#FCFAFA] py-5 px-4">Home Office</li>
+          <li class="font-bold text-lg bg-[#FCFAFA] py-5 px-4">Gaming Room</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bg-[#2F241F]">
+      <div class="w-full relative">
+        <div
+          class="px-4 md:px-[142px] py-8 md:py-20 flex items-center justify-between">
+          <div class="flex flex-col gap-2">
+            <h2 class="text-[#E5F0B6] text-sm md:text-2xl">OUR PRODUCTS</h2>
+            <h1 class="text-[#E5F0B6] text-lg md:text-5xl font-bold">
+              This month’s best seller
+            </h1>
+          </div>
+
+          <button
+            class="bg-[#E5F0B6] rounded-xl py-3 md:py-[14px] px-4 md:px-9 text-base">
+            SEE MORE
+          </button>
+        </div>
+
+        <div
+          id="carousel"
+          class="flex items-start w-full gap-4 md:gap-9 overflow-hidden scroll-smooth px-4 md:px-9"></div>
+
+        <div
+          id="arrow-icons"
+          class="flex w-full justify-end pr-[141px] pt-10 pb-14 gap-9">
+          <button
+            id="left"
+            class="bg-[#E5F0B6] rounded-full w-14 h-14 flex justify-center items-center absolute md:relative bottom-[40%] left-0">
+            <img src="./assets/arrow-left.png" alt="Arrow Left" />
+          </button>
+
+          <button
+            id="right"
+            class="bg-[#E5F0B6] rounded-full w-14 h-14 flex justify-center items-center absolute md:relative bottom-[40%] right-0">
+            <img
+              src="./assets/arrow-left.png"
+              class="rotate-180"
+              alt="Arrow Right " />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="px-[35px] md:px-[142px] py-8 md:py-20 flex flex-col gap-1 md:gap-[42px] bg-[#FCFAFA]">
+      <h3 class="text-sm md:text-2xl text-center md:text-left">
+        LIMITED DEALS
+      </h3>
+      <h1 class="text-[18px] md:text-[64px] font-bold text-center md:text-left">
+        Become a member and get 10% off of your first purchase
+      </h1>
+
+      <div class="flex mt-6 md:mt-0 justify-center md:justify-start w-full">
+        <input
+          type="email"
+          placeholder="Enter your email here"
+          class="p-4 md:px-9 md:py-[22px] w-full md:w-[503px] md:h-20 rounded-s-lg" />
+        <button
+          class="p-[18px] md:w-20 md:h-20 bg-[#E5F0B6] flex justify-center items-center rounded-e-lg">
+          <img src="./assets/mail.png" alt="Email" />
+        </button>
+      </div>
+    </section>
+
+    <footer
+      id="contact"
+      class="px-4 md:px-[100px] py-[35px] md:py-[91px] flex flex-col md:flex-row justify-between md:gap-[246px] text-[#667085]">
+      <div>
+        <div class="w-full flex justify-center md:justify-start">
+          <img src="./assets/logo.svg" alt="Logo" class="mb-9" />
+        </div>
+
+        <p class="mb-[69px] text-center md:text-left">
+          Dekoor is a furniture company created to fulfill the needs of family
+          with aesthetic feeling in their furniture. Always pay attention to
+          details and give clear communication for the customers. Priority of
+          our design is comfortability.
+        </p>
+        <p class="hidden md:block">©Copyright 2022 Dekoor</p>
+      </div>
+
+      <div
+        class="flex flex-wrap justify-between gap-y-7 md:gap-[52px] md:w-[490px] flex-none mx-[21px] md:mx-0">
+        <ul class="flex flex-col gap-[25px] text-center md:text-left">
+          <h2 class="font-medium text-xl text-[#101828]">Support</h2>
+          <li>FAQ</li>
+          <li>Shipping & Returns</li>
+          <li>Care guide</li>
+          <li>Redeem warranty</li>
+        </ul>
+
+        <ul class="flex flex-col gap-[25px] text-center md:text-left">
+          <h2 class="font-medium text-xl text-[#101828]">Social Media</h2>
+          <li>Instagram</li>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>TikTok</li>
+        </ul>
+
+        <div class="w-full md:w-max text-center md:text-left">
+          <ul class="flex flex-col gap-[25px]">
+            <h2 class="font-medium text-xl text-[#101828]">About Us</h2>
+            <li>Our story</li>
+            <li>Designer</li>
+            <li>Craftmanship</li>
+            <li>Sustainability</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>

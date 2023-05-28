@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --hactive: var(--hactive);
+  --wactive: var(--wactive);
+}
+
+.active {
+  height: var(--hactive);
+  width: var(--wactive);
+}
